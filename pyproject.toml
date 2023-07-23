@@ -1,0 +1,38 @@
+[project]
+name = "server-access-detector"
+description = "Server Access Detector"
+authors = [
+    {name = "Marc Averbeck", email="ghostcode1337@gmx.com"},
+]
+license = {text = "UNLICENSED"}
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["samba"]
+classifiers = [
+    "Topic :: Software Development"
+]
+
+dynamic = ["version"]
+
+dependencies = [
+    "extended_config_file @ git+https://github.com/averbeck/python-extended-config-file.git@1.1.0",
+    "extended_logger @ git+https://github.com/averbeck/python-extended-logger.git@1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "nose2[coverage-plugin]",
+    "coverage",
+    "black",
+]
+
+[build-system]
+requires = [
+    "setuptools >= 65.6.3",
+    "wheel"
+]
+
+[tool.black]
+line-length = 120
+target_version = ['py310']
