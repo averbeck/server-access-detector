@@ -1,0 +1,9 @@
+# Python venvs
+venv
+
+# Build directories
+build
+
+# Cache
+__pycache__
+cache

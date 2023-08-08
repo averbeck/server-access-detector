@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  server-access-detector:
+    image: "server-access-detector-dev:latest"
+    build:
+      context: ../
+      dockerfile: ./.devcontainer/containerfile
+    network_mode: host
+    volumes:
+    -  ../:/workspace

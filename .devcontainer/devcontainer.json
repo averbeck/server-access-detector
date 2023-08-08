@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "Python 3",
+    "dockerComposeFile": "docker-compose.yml",
+    "shutdownAction": "stopCompose",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
+    "service": "server-access-detector",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-german"
+            ]
+        }
+    },
+}

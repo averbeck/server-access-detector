@@ -1,0 +1,7 @@
+scapy
+
+[dev]
+flake8
+nose2[coverage-plugin]
+coverage
+black

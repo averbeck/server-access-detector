@@ -15,8 +15,7 @@ classifiers = [
 dynamic = ["version"]
 
 dependencies = [
-    "extended_config_file @ git+https://github.com/averbeck/python-extended-config-file.git@1.1.0",
-    "extended_logger @ git+https://github.com/averbeck/python-extended-logger.git@1.0.0",
+    "scapy",
 ]
 
 [project.optional-dependencies]

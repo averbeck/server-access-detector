@@ -1,0 +1,13 @@
+FROM python:3.11
+
+RUN set -ex \
+    && apt update \
+    && DEBIAN_FRONTEND="noninteractive" apt install --no-install-recommends -y \
+        iproute2 \
+        libpcap0.8 \
+        make
+
+COPY pyproject.toml /tmp/pyproject.toml
+
+# ENTRYPOINT [ "bash" ]
+CMD ["bash", "-c", "sleep 1d"]
