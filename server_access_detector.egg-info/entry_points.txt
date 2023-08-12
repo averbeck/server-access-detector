@@ -1,0 +1,2 @@
+[console_scripts]
+server-access-detector = server_access_detector.main:main
