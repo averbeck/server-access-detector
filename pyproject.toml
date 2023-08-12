@@ -26,6 +26,9 @@ dev = [
     "black",
 ]
 
+[project.scripts]
+server-access-detector = "server_access_detector.main:main"
+
 [build-system]
 requires = [
     "setuptools >= 65.6.3",
@@ -34,4 +37,4 @@ requires = [
 
 [tool.black]
 line-length = 120
-target_version = ['py310']
+target_version = ['py311']
